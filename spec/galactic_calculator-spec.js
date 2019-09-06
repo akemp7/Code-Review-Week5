@@ -47,14 +47,19 @@ describe('ageYears', function(){
 
 describe('keithRichards', function(){
   it('should subtract the year 2073 from current year to find age difference', function(){
-    const year = 2073;
+    const year = 2073 - 2019
     expect(keithAge()).toEqual(54);
   });
   it('should add age difference to current age of Keith Richards', function(){
-    const age = 76;
+    const age = 2019 - 1943;
     expect(keithAge()).toEqual(130);
   });
   it('should add multiply this new sum by 7 for dog years', function(){
     const age = 130;
-    expect(keithAge()).toEqual(454);
+    expect(keithAge()).toEqual(910);
+  });
+  it('should divide this new age in dog years by 11.86 (Jupiter years) and round', function(){
+    const age = 910;
+    expect(keithAge()).toEqual(77);
+  });
 });
