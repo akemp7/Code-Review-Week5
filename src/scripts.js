@@ -49,5 +49,6 @@ export function keithAge(){
   let year = findYear.getFullYear();
   let currentAge = year - 1943;
   let ageDifference = 2073-year;
-  return (currentAge + ageDifference) * 7;
+  let dogAge = (currentAge + ageDifference) * 7;
+  return Math.round(dogAge / 11.86);
 }
