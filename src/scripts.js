@@ -18,4 +18,19 @@ export class ageYears{
     const userAge = Math.round(this.age / this.planet);
     return userAge;
   }
+  venusAge(){
+    this.planet = .62;
+    const userAge = Math.round(this.age / this.planet);
+    return userAge;
+  }
+  marsAge(){
+    this.planet = 1.88;
+    const userAge = Math.round(this.age / this.planet);
+    return userAge;
+  }
+  jupiterAge(){
+    this.planet = 11.86;
+    const userAge = Math.round(this.age / this.planet);
+    return userAge;
+  }
 }

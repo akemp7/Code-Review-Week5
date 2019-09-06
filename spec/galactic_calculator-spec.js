@@ -23,5 +23,16 @@ describe('ageYears', function(){
     let year = new ageYears(30);
     expect(year.mercuryAge()).toEqual(125);
   });
-
+  it('should divide user age by .62 and round if need be to determine age on Venus', function(){
+    let year = new ageYears(30);
+    expect(year.venusAge()).toEqual(48);
+  });
+  it('should divide user age by 1.88 and round if need be to determine age on Mars', function(){
+    let year = new ageYears(30);
+    expect(year.marsAge()).toEqual(16);
+  });
+  it('should divide user age by 11.86 and round if need be to determine age on Jupiter', function(){
+    let year = new ageYears(30);
+    expect(year.jupiterAge()).toEqual(3);
+  });
 });
