@@ -42,7 +42,7 @@ _For any questions, please contact: anita.k.kemp@gmail.com_
 
 ## Technologies Used
 
-_Javascript/jQuery, HTML_
+_Javascript/jQuery, HTML, Bootstrap_
 
 ### License
 
