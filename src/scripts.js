@@ -1,4 +1,4 @@
-export function userInput(input){
+export function userInput(input){ //function is for the specification testing
   if(isNaN(input)|| input<0){
     input = "Invalid Input";
   } else if(Math.ceil(input)-input !==0){
