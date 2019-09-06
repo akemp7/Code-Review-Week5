@@ -47,5 +47,6 @@ export class ageYears{
 export function keithAge(){
   const findYear = new Date();
   let year = findYear.getFullYear();
-  return 2073-year;
+  let currentAge = year - 1943;
+  let ageDifference = 2073-year;
 }

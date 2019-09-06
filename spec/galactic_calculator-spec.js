@@ -51,7 +51,10 @@ describe('keithRichards', function(){
     expect(keithAge()).toEqual(54);
   });
   it('should add age difference to current age of Keith Richards', function(){
-    const age = 75;
-    expect(keithAge()).toEqual(129);
+    const age = 76;
+    expect(keithAge()).toEqual(130);
   });
+  it('should add multiply this new sum by 7 for dog years', function(){
+    const age = 130;
+    expect(keithAge()).toEqual(454);
 });
