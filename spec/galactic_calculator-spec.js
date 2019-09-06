@@ -1,4 +1,4 @@
-import {userInput, ageYears} from './../src/scripts.js';
+import {userInput, ageYears, keithAge} from './../src/scripts.js';
 describe ('userInput', function(){
   it('should refuse non-numeric input', function(){
     const input = "4%%^";
@@ -48,6 +48,10 @@ describe('ageYears', function(){
 describe('keithRichards', function(){
   it('should subtract the year 2073 from current year to find age difference', function(){
     const year = 2073;
-    expect(year-keiththAge()).toEqual(54);
+    expect(keithAge()).toEqual(54);
+  });
+  it('should add age difference to current age of Keith Richards', function(){
+    const age = 75;
+    expect(keithAge()).toEqual(129);
   });
 });

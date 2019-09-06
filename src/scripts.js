@@ -44,3 +44,8 @@ export class ageYears{
 }
 
 //to calculate Keith Richards age in dog years on Jupiter in 2073
+export function keithAge(){
+  const findYear = new Date();
+  let year = findYear.getFullYear();
+  return 2073-year;
+}
