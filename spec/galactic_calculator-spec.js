@@ -35,4 +35,12 @@ describe('ageYears', function(){
     let year = new ageYears(30);
     expect(year.jupiterAge()).toEqual(3);
   });
+  it('should give back remaining number of years left if age is less than life expectancy', function(){
+    let year = new ageYears(30);
+    expect(year.lifeExpectancy()).toEqual(49);
+  });
+  it('should give back the number of years surpassed from life expectancy if age is greater than 79', function(){
+    let year = new ageYears(89);
+    expect(year.lifeExpectancy()).toEqual(10);
+  });
 });

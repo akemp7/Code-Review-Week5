@@ -33,4 +33,11 @@ export class ageYears{
     const userAge = Math.round(this.age / this.planet);
     return userAge;
   }
+  lifeExpectancy(){
+    if(this.age < 79){
+      this.age = 79 - this.age;
+    } else if(this.age > 79){
+      this.age = this.age - 79;
+    }return this.age;
+  }
 }
