@@ -6,7 +6,7 @@
 
 ## Description
 
-_A user will enter in their age, and the output will be a list of their ages in years on: Mercury, Venus, Mars, and Jupiter. It will also determine either how many years they have left or how many years they have surpassed the average life expectancy, regardless of gender, in the United States._
+_A user will enter in their age, and the output will be a list of their ages in years on: Mercury, Venus, Mars, and Jupiter. It will also determine either how many years they have left or how many years they have surpassed the average life expectancy, regardless of gender, in the United States. It also calculates the age of Keith Richards in dog years for the year 2073 on Jupiter._
 
 ## Specifications
 |Behavior|Input|Output|
@@ -14,12 +14,16 @@ _A user will enter in their age, and the output will be a list of their ages in 
 |The application will only accept numeric input| 4%%^| "Invalid Input"|
 |The application will only accept positive numbers| -3 | "Invalid Input"|
 |The application will only accept integers| .5 | "Invalid Input"|
-|The application will divide user age by .24 (and round if decimal) to show age on Mercury| 30 | "You are: 125 years old on Mercury"|
-|The application will divide user age by .62 (and round if decimal) to show age on Venus| 30| "You are: 48 years old on Venus"|
-|The application will divide user age by 1.88 (round if necessary) to show age on Mars | 30| "You are: 16 years old on Mars"|
-|The application will divide user age by 11.86 (round if necessary) to show age on Jupiter| 30| "You are: 3 years old on Jupiter"|
-|The application will take user age and subtract by life expectancy of US (~ 79 years, regardless of gender) and show how many years they have left| 30| "You have 49 years left on this planet"|
-|The application will return the number of years a user has lived past life expectancy if age surpasses it| 89 | "Congratulations! You have lived more than 10 years past the average US life expectancy"|
+|The application will divide user age by .24 (and round if decimal) to show age on Mercury| 30 | "Mercury Years: 125"|
+|The application will divide user age by .62 (and round if decimal) to show age on Venus| 30| "Venus Years: 48"|
+|The application will divide user age by 1.88 (round if necessary) to show age on Mars | 30| "Mars Years: 16"|
+|The application will divide user age by 11.86 (round if necessary) to show age on Jupiter| 30| "Jupiter Years: 3"|
+|The application will take user age and subtract by life expectancy of US (~ 79 years, regardless of gender) and show how many years they have left| 30| 49|
+|The application will return the number of years a user has lived past life expectancy if age surpasses it| 89 | 10|
+|The application will subtract the year 2073 from current year to find age difference| 2019 | 54|
+|The application will add age difference to current age of Keith Richards| 76 (it is rounding his current age) | 130|
+|The application will multiply this new sum by 7 for dog years| 130 | 910|
+|The application will divide this new age in dog years by 11.86 (Jupiter years) and round| 910 | 77|
 
 ## Setup/Installation Requirements
 
