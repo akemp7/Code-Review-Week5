@@ -1,4 +1,5 @@
-export function userInput(input){ //function is for the specification testing
+//userInput function used to pass specifications
+export function userInput(input){
   if(isNaN(input)|| input<0){
     input = "Invalid Input";
   } else if(Math.ceil(input)-input !==0){
@@ -7,7 +8,7 @@ export function userInput(input){ //function is for the specification testing
     input = parseInt(input);
   } return input;
 }
-
+//to caclculate galactic years
 export class ageYears{
   constructor (age, planet) {
     this.age = age;
@@ -41,3 +42,5 @@ export class ageYears{
     }return this.age;
   }
 }
+
+//to calculate Keith Richards age in dog years on Jupiter in 2073

@@ -44,3 +44,10 @@ describe('ageYears', function(){
     expect(year.lifeExpectancy()).toEqual(10);
   });
 });
+
+describe('keithRichards', function(){
+  it('should subtract the year 2073 from current year to find age difference', function(){
+    const year = 2073;
+    expect(year-keiththAge()).toEqual(54);
+  });
+});
