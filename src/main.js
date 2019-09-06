@@ -5,12 +5,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 $(document).ready(function(){
   $("#userAge").submit(function(event){
-    $(".life").hide();
+    debugger;
     const userAge = parseInt($("#yourAge").val());
-    if(Math.ceil(userAge)-input !==0 || userAge<0){
+    const newAge = new ageYears(userAge);
+    if(Math.ceil(userAge)-userAge !==0 || userAge<0){
       alert("Invalid Input");
     } else {
-      const newAge = new ageYears(userAge);
       $("#mercuryYears").text(newAge.mercuryAge());
       $("#venusYears").text(newAge.venusAge());
       $("#marsYears").text(newAge.marsAge());
@@ -18,9 +18,9 @@ $(document).ready(function(){
     }
 
     if (userAge < 79){
-      $("#yearsLeft").text(newAge.lifeExpectancy());
+       $("#young").text(newAge.lifeExpectancy(userAge));
     }else{
-      $("#yearsPassed").text(newAge.lifeExpectancy());
+      return $("#old").text(newAge.lifeExpectancy(userAge));
     }
   });
 });
