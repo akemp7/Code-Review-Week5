@@ -34,7 +34,7 @@ _A user will enter in their age, and the output will be a list of their ages in 
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+There are no known bugs.
 
 ## Support and contact details
 

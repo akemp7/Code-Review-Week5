@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 $(document).ready(function(){
   $("#userAge").submit(function(event){
+    event.preventDefault();
     const userAge = parseInt($("#yourAge").val());
     if(Math.ceil(userAge)-userAge !==0 || userAge<0){
       alert("Invalid Input");
